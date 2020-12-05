@@ -1,23 +1,11 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
 
-public class Day4 {
 
-	private static List<String> input = new ArrayList<String>();
-	
-	public Day4(String s) throws FileNotFoundException {
-		Scanner scanner = new Scanner(new File(s));
-		while(scanner.hasNext()) {
-			input.add(scanner.nextLine());
-		}
-	}
+public class Day4 extends Day{
+
+	private static List<String> input = Day.getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc4.txt");
 	
 	public static int getSolution1() {
 		int valid = 0;
@@ -109,15 +97,6 @@ public class Day4 {
 				
 				if(ecl && byr && iyr && pid && hgt && eyr && hcl) ++valid;
 				
-				System.out.println(map);
-				System.out.println((ecl && byr && iyr && pid && hgt && eyr && hcl));
-				System.out.println("ecl " + ecl);
-				System.out.println("byr " + byr);
-				System.out.println("iyr " + iyr);
-				System.out.println("pid " + pid);
-				System.out.println("hgt " + hgt);
-				System.out.println("eyr " + eyr);
-				System.out.println("hcl " + hcl);
 				ecl = false; byr = false; iyr = false; pid = false; hgt = false; eyr = false; hcl = false;
 				map.clear();
 			}

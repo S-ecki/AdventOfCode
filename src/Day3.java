@@ -1,20 +1,10 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 
-public class Day3 {
+
+public class Day3 extends Day{
 	
-	private static List<String> input = new ArrayList<String>();
-	
-	public Day3(String s) throws FileNotFoundException {
-		Scanner scanner = new Scanner(new File(s));
-		while(scanner.hasNext()) {
-			input.add(scanner.next());
-		}
-	}
+	private static List<String> input = Day.getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc3.txt");
+
 	
 	public static long getSolution1() {
 		return  treeNumVarSlope(3, 1);

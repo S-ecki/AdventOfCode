@@ -4,11 +4,12 @@ import java.util.*;
 
 public class Day2 {
 	private static List<String> input = new ArrayList<String>();
-	public Day2(String s) throws FileNotFoundException {
-		Scanner scanner = new Scanner(new File(s));
+	
+	Day2() throws FileNotFoundException{
+		Scanner scanner = new Scanner(new File("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc2.txt"));
 		while(scanner.hasNext()) {
 			input.add(scanner.next());
-		}
+		}		
 	}
 	
 	public static int getSolution1() {
@@ -39,7 +40,6 @@ public class Day2 {
 		String currentS;
 		String[] parts;
 		char c;
-		boolean validBool = false;
 		
 		for(Iterator<String> it = input.iterator(); it.hasNext(); ) {
 			parts = ((String) it.next()).split("-");

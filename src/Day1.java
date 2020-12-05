@@ -4,24 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Day1 {
+public class Day1{
+	private static List<Integer> input = new ArrayList<Integer>();
 	
-	public static int getSolution(String s) throws FileNotFoundException {
-		
+	Day1() throws FileNotFoundException{
+		Scanner scanner = new Scanner(new File("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc1.txt"));
+		while(scanner.hasNext()) {
+			input.add(scanner.nextInt());
+		}		
+	}
 	
-		Scanner input = new Scanner(new File(s));
-		
-		List<Integer> l = new ArrayList<>();
-		
-		while(input.hasNextInt()) {
-			l.add(input.nextInt());
-		}
-		
-		input.close();
-		
-		for(int n1: l) {
-			for(int n2: l) {
-				for(int n3: l) {
+	public static int getSolution() throws FileNotFoundException {
+		for(int n1: input) {
+			for(int n2: input) {
+				for(int n3: input) {
 					if(n1+n2+n3==2020) return n1*n2*n3;
 				}
 			}
