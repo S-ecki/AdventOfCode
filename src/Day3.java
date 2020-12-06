@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Day3 extends Day{
 	
-	private static List<String> input = Day.getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc3.txt");
+	private static List<String> input = getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc3.txt");
 
 	
 	public static long getSolution1() {
