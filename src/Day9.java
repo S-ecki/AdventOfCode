@@ -1,18 +1,16 @@
 import java.util.*;
 
 public class Day9 extends Day{
-	private static List<Long> input = getInputInt("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc9.txt");
+	private static List<Long> input = getInputLong("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc9.txt");
 	
 	public static long getSolution1() {
 		
-		outer:
 		for(int i = 25; i < input.size(); ) {		//validate numbers - first 25 preamble
 			long searchFor = input.get(i);
 			middle:
 			for(int ii = i - 25; ii < i; ++ii) {	
 				if(ii == i-1) return searchFor;
 				long validator1 = input.get(ii);
-				inner:
 				for(int iii = ii + 1; iii < i; ++iii) {
 					long validator2 = input.get(iii);
 					if(validator1 + validator2 == searchFor) {
