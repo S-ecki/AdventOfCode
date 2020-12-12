@@ -35,10 +35,16 @@ public class AocMain {
 		System.out.println("Day9, Solution1: " + Day9.getSolution1());
 		System.out.println("Day9, Solution2: " + Day9.getSolution2());
 		
-			*/
+			
 		new Day10();
 		System.out.println("Day10, Solution1: " + Day10.getSolution1());
 		System.out.println("Day10, Solution2: " + Day10.getSolution2());
+		*/
+		 
+		Day12 d = new Day12();
+		System.out.println("Day12, Solution1: " + d.getSolution(true));
+		System.out.println("Day12, Solution2: " + d.getSolution(false));
+		
 	}
 
 };
