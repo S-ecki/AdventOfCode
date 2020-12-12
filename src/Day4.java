@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Day4 extends Day{
 
-	private static List<String> input = getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc4.txt");
+	private static List<String> input = getInputLine(four);
 	
 	public static int getSolution1() {
 		int valid = 0;

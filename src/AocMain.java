@@ -2,7 +2,7 @@ import java.io.FileNotFoundException;
 public class AocMain {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		/*
+		
 		new Day1();
 		System.out.println("Day1, Solution2: " + Day1.getSolution());
 
@@ -39,7 +39,7 @@ public class AocMain {
 		new Day10();
 		System.out.println("Day10, Solution1: " + Day10.getSolution1());
 		System.out.println("Day10, Solution2: " + Day10.getSolution2());
-		*/
+		
 		 
 		Day12 d = new Day12();
 		System.out.println("Day12, Solution1: " + d.getSolution(true));

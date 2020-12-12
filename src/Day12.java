@@ -67,7 +67,7 @@ public class Day12 extends Day{
 	
 //start of Day 12 class
 	
-	private List<String> input = getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc12.txt");
+	private List<String> input = getInputLine(twelve);
 	private List<Instruction> instructions = getInstructionSet(input);		//input is now list of instructions
 	
 	private List<Instruction> getInstructionSet(List<String> input){		//converts input strings to Instructions (own class)

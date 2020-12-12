@@ -1,16 +1,7 @@
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.*;
 
-public class Day2 {
-	private static List<String> input = new ArrayList<String>();
-	
-	Day2() throws FileNotFoundException{
-		Scanner scanner = new Scanner(new File("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc2.txt"));
-		while(scanner.hasNext()) {
-			input.add(scanner.next());
-		}		
-	}
+public class Day2 extends Day{
+	private static List<String> input = getInputSpace(two);
 	
 	public static int getSolution1() {
 		int valid = 0;

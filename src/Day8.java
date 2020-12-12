@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Day8 extends Day {
 	
-	private static List<String> input = getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc8.txt");
+	private static List<String> input = getInputLine(eight);
 
 
 	public static int getSolution1() {

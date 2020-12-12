@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Day1{
+public class Day1 {
 	private static List<Integer> input = new ArrayList<Integer>();
 	
 	Day1() throws FileNotFoundException{
-		Scanner scanner = new Scanner(new File("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc1.txt"));
+		Scanner scanner = new Scanner(new File("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\input\\aoc1.txt"));
 		while(scanner.hasNext()) {
 			input.add(scanner.nextInt());
 		}		

@@ -1,7 +1,8 @@
 import java.util.*;
 
+//this was a day I had particularily little time to work with, excuse the spaghetti future-simon
 public class Day9 extends Day{
-	private static List<Long> input = getInputLong("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc9.txt");
+	private static List<Long> input = getInputLong(nine);
 	
 	public static long getSolution1() {
 		
@@ -17,13 +18,8 @@ public class Day9 extends Day{
 						++i;
 						break middle;
 					}
-					
 				}
-				
-				
 			}
-			
-			
 		}
 		return 0;
 	}
@@ -35,18 +31,12 @@ public class Day9 extends Day{
 		int end = 0;
 		outer:
 		for(int i = 2; i < input.size(); ++i) {		//length of numbers to sum up
-			
 			for(int ii = 0; ii < input.size() - i+1; ++ii) {	//+1?
-				
 				if(sumOfN(ii, i) == invalidNum) { start = ii; end = ii + i-1; break outer;}
 			}		
 		}
-		
-		System.out.println("startend " + start + " " + end);
 		long min = findMinMax(start, end, true);
 		long max = findMinMax(start, end, false);
-		System.out.println(start + " " + end + " " + min + "  " + max);
-		System.out.println(input.get(start));
 		return min+max;
 	}
 	
@@ -61,18 +51,10 @@ public class Day9 extends Day{
 	
 	static long findMinMax(int start, int end, boolean min) {
 		long ret = input.get(start);
-		int numLoop = 0;
-		for(int i = start; i < end; ++i) {	//<= ?
-			
-			if(min) {
-				++numLoop;
-				if(input.get(i) < ret) ret = input.get(i);
-			}else {
-				++numLoop;
-				if(input.get(i) > ret) ret = input.get(i);
-			}
+		for(int i = start; i < end; ++i) {
+			if(min) if(input.get(i) < ret) ret = input.get(i);
+			else if(input.get(i) > ret) ret = input.get(i);
 		}
-		System.out.println(" numl " +numLoop);
 		return ret;
 	}
 }

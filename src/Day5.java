@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Day5 extends Day{
 
-	private static List<String> input = getInput("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc5.txt");
+	private static List<String> input = getInputLine(five);
 	
 	
 	public static int getSeatID(String s) {

@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Day10 extends Day{
 
-	private static SortedSet<Integer> input = getInputIntSet("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\aoc10.txt");
+	private static SortedSet<Integer> input = getInputIntSet(ten);
 	
 	public static int getSolution1() {
 		input.add(input.last() + 3);	//add device (always 3 jolts higher than highest
