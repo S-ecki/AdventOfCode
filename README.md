@@ -6,6 +6,6 @@ In general, I had little time to optimize my code with exams and assignments. <b
 However, that wasn´t my aim here. I wanted to get as many solutions as possible while practising my Java proficiency.
 
 ## What I´ve learned
-* 1
-* 2
-* 3
+* 
+* binary <-> decimal parsing in Java
+* Not using long for large numbers causes pain
