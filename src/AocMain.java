@@ -50,11 +50,17 @@ public class AocMain {
 	
 		new Day14();
 		System.out.println("Day14, Solution1: " + Day14.getSolution1());
-		*/	
+			
 		
 		new Day15();
 		System.out.println("Day15, Solution1: " + Day15.getSolution1());
 		System.out.println("Day15, Solution2: " + Day15.getSolution2());
+		
+		new Day16();
+		System.out.println("Day16, Solution1: " + Day16.getSolution1());
+		System.out.println("Day16, Solution2: " + Day16.getSolution2());
+		
+		*/
 	}
 
 };

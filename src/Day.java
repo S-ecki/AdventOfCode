@@ -15,6 +15,7 @@ public class Day {
 	protected final static String thirteen = "S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\input\\aoc13.txt";
 	protected final static String fourteen = "S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\input\\aoc14.txt";
 	protected final static String fifteen = "S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\input\\aoc15.txt";
+	protected final static String sixteen = "S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\input\\aoc16.txt";
 	
 	protected static List<String> getInputLine(String s) {
 		List<String> input = new ArrayList<>();
