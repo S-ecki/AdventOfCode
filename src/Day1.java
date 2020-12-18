@@ -8,7 +8,7 @@ public class Day1 {
 	private static List<Integer> input = new ArrayList<Integer>();
 	
 	Day1() throws FileNotFoundException{
-		Scanner scanner = new Scanner(new File("S:\\Coding\\Eclipse\\Workspace\\Uni\\AdventOfCode\\src\\input\\aoc1.txt"));
+		Scanner scanner = new Scanner(new File("AdventOfCode\\input\\aoc1.txt"));
 		while(scanner.hasNext()) {
 			input.add(scanner.nextInt());
 		}		
