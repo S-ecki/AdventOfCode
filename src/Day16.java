@@ -3,13 +3,13 @@ import java.util.*;
 
 public class Day16 extends Day{
 	
-	private class Field {		//represents one on the ticket
+	private class Field {		//represents rule one on the ticket
 		private Integer[] lower = new Integer[2];	//first set of rules
 		private Integer[] upper = new Integer[2];	//second set of rules
 		private Field(int lower0, int lower1, int upper0, int upper1) {
 			lower[0] = lower0; lower[1] = lower1;
 			upper[0] = upper0; upper[1] = upper1;
-		}		
+		}	
 	}
 	
 	
@@ -76,7 +76,5 @@ public class Day16 extends Day{
 		
 		return invalidSum;
 	}
-	
-	
 	
 }
