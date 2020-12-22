@@ -1,5 +1,8 @@
 import java.io.FileNotFoundException;
+import java.util.*;
+import java.util.concurrent.LinkedBlockingQueue;
 public class AocMain {
+	
 
 	public static void main(String[] args) throws FileNotFoundException {
 
@@ -60,10 +63,11 @@ public class AocMain {
 	 	new Day16();
 		System.out.println("Day16, Solution1: " + Day16.getSolution1());
 			*/
-	
 		
 		new Day22();
 		System.out.println("Day22, Solution1: " + Day22.getSolution1());
+		System.out.println("Day22, Solution2: " + Day22.getSolution2());
+
 		
 	}
 
