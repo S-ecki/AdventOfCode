@@ -17,6 +17,7 @@ public class Day {
 	protected final static String fifteen = "input\\aoc15.txt";
 	protected final static String sixteen = "input\\aoc16.txt";
 	protected final static String twentytwo = "input\\aoc22.txt";
+	protected final static String twentyfive = "input\\aoc25.txt";
 	
 	protected static List<String> getInputLine(String s) {
 		List<String> input = new ArrayList<>();

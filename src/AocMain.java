@@ -6,7 +6,6 @@ public class AocMain {
 
 	public static void main(String[] args) throws FileNotFoundException {
 
-	/*
 		new Day1();
 		System.out.println("Day1, Solution2: " + Day1.getSolution());
 		
@@ -62,13 +61,14 @@ public class AocMain {
 	 	
 	 	new Day16();
 		System.out.println("Day16, Solution1: " + Day16.getSolution1());
-			*/
-		
+			
 		new Day22();
 		System.out.println("Day22, Solution1: " + Day22.getSolution1());
 		System.out.println("Day22, Solution2: " + Day22.getSolution2());
 
-		
+		new Day25();
+		System.out.println("Day25, Solution1: " + Day25.getSolution1());
+		System.out.println("Day25, Solution2: " + Day25.getSolution2());
 	}
 
 };
